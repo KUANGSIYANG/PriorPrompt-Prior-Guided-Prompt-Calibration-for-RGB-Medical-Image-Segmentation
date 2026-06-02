@@ -1,0 +1,94 @@
+{
+  "name": "branch_safeanchor_gpc_v8c_paper_release",
+  "date": "2026-05-24",
+  "status": "paper_release_relative_paths",
+  "method_family": "SafeAnchor-GPC-v8c Teacher-Free NoResidual NoTemperature LearnedThreshold",
+  "single_path_per_case": true,
+  "safeanchor_final_mask": true,
+  "post_safeanchor_module": false,
+  "uses_candidate_gate": false,
+  "uses_area_gate": false,
+  "uses_point_prompt": false,
+  "uses_thresholded_box_in_model": false,
+  "uses_fixed_alpha_at_inference": false,
+  "uses_fixed_pred_threshold_at_inference": false,
+  "teacher_mode": "none",
+  "bb2_channels": "logit_grad_only",
+  "coarse_calib_ckpt": "not_used_by_v8c",
+  "kvasir_sam_ckpt": "assets/checkpoints/kvasir_bb2_checkpoint_best.pth",
+  "ph2_sam_ckpt": "assets/checkpoints/ph2_bb2_checkpoint_best.pth",
+  "mobile_sam_ckpt": "assets/checkpoints/mobile_sam.pt",
+  "gpc_cfg": {
+    "hidden_channels": 24,
+    "depth": 4,
+    "residual_scale_init": 0.05,
+    "alpha_init": 0.5,
+    "box_scale_init": 2.5,
+    "temperature_init": 1.0,
+    "logit_clip": 8.0,
+    "use_residual": false,
+    "use_distill_loss": false,
+    "use_temperature": false,
+    "use_learned_threshold": true,
+    "use_binary_shape_losses": false,
+    "use_binary_distance_loss": false,
+    "global_delta_scale": 1.0,
+    "use_learned_global_scale": true,
+    "use_global_tanh": true,
+    "threshold_init": 0.6,
+    "threshold_sharpness_init": 12.0
+  },
+  "kvasir_train": {
+    "images_dir": "data/kvasir/train/images",
+    "labels_dir": "data/kvasir/train/labels",
+    "prob_dir": "data/kvasir/train/probs",
+    "ids_file": "data/kvasir/train/ids.txt",
+    "use_base_coarse_calibrator": false
+  },
+  "ph2_train": {
+    "images_dir": "data/ph2/train/images",
+    "labels_dir": "data/ph2/train/labels",
+    "prob_dir": "data/ph2/train/probs",
+    "ids_file": "data/ph2/train/ids.txt",
+    "use_base_coarse_calibrator": false
+  },
+  "kvasir_eval": {
+    "use_base_coarse_calibrator": false
+  },
+  "ph2_eval": {
+    "use_base_coarse_calibrator": false
+  },
+  "val50_eval": {
+    "images_dir": "data/kvasir/val50/images",
+    "labels_dir": "data/kvasir/val50/labels",
+    "prob_dir": "data/kvasir/val50/probs",
+    "ids_file": "data/kvasir/val50/ids.txt",
+    "use_base_coarse_calibrator": false
+  },
+  "test70_eval": {
+    "images_dir": "data/kvasir/test70/images",
+    "labels_dir": "data/kvasir/test70/labels",
+    "prob_dir": "data/kvasir/test70/probs",
+    "ids_file": "data/kvasir/test70/ids.txt",
+    "use_base_coarse_calibrator": false
+  },
+  "ph2_val30_eval": {
+    "images_dir": "data/ph2/val30/images",
+    "labels_dir": "data/ph2/val30/labels",
+    "prob_dir": "data/ph2/val30/probs",
+    "ids_file": "data/ph2/val30/ids.txt",
+    "use_base_coarse_calibrator": false
+  },
+  "ph2_test30_eval": {
+    "images_dir": "data/ph2/test30/images",
+    "labels_dir": "data/ph2/test30/labels",
+    "prob_dir": "data/ph2/test30/probs",
+    "ids_file": "data/ph2/test30/ids.txt",
+    "use_base_coarse_calibrator": false
+  },
+  "protocol_note": [
+    "Kvasir and PH2 use the same GPC architecture and inference path.",
+    "Dataset-specific items are limited to images, labels, nnUNet probability maps, BB2/SAM checkpoint, and GPC checkpoint.",
+    "Paper protocol uses full 3-epoch training and checkpoint_last, not validation-best or checkpoint soup."
+  ]
+}

@@ -1,0 +1,30 @@
+﻿{
+    "release":  "SafeAnchor-GPC-v8c paper_release_v8c",
+    "created_at":  "2026-05-25T00:14:09",
+    "source_root":  "E:\\PA\\safeanchor_repro_clean",
+    "policy":  "clean v8c only; no legacy experiment branches; checkpoint_last protocol",
+    "datasets":  {
+                     "kvasir_train880":  880,
+                     "kvasir_val50":  50,
+                     "kvasir_test70":  70,
+                     "ph2_train140":  140,
+                     "ph2_val30":  30,
+                     "ph2_test30":  30
+                 },
+    "weights":  {
+                    "mobile_sam":  "assets/checkpoints/mobile_sam.pt",
+                    "kvasir_bb2":  "assets/checkpoints/kvasir_bb2_checkpoint_best.pth",
+                    "ph2_bb2":  "assets/checkpoints/ph2_bb2_checkpoint_best.pth",
+                    "kvasir_gpc_last":  "outputs/gpc_v8c_learnthr_unified_kvasir_train880_3ep_v1/checkpoint_last.pth",
+                    "ph2_gpc_last":  "outputs/gpc_v8c_learnthr_unified_ph2_train140_3ep_v1/checkpoint_last.pth",
+                    "kvasir_nnunet":  "assets/nnunet_weights/kvasir_100ep_old512hexa",
+                    "ph2_nnunet":  "assets/nnunet_weights/ph2_30ep"
+                },
+    "training_entrypoints":  {
+                    "standard_dispatcher":  "train.py",
+                    "nnunet_upstream":  "train_nnunet.py",
+                    "bb2_prompt_adapter":  "train_bb2.py",
+                    "gpc_mainline":  "train_gpc_prior.py",
+                    "nnunet_probability_export":  "export_nnunet_probs.py"
+                }
+}

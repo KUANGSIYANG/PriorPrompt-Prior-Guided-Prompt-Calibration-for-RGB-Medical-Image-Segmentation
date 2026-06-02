@@ -1,0 +1,229 @@
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+ 
+
+This is the configuration used by this training:
+Configuration name: 2d
+ {'data_identifier': 'nnUNetPlans_old512_2d', 'preprocessor_name': 'DefaultPreprocessor', 'batch_size': 12, 'patch_size': [512, 512], 'median_image_size_in_voxels': [530.0, 621.0], 'spacing': [1.0, 1.0], 'normalization_schemes': ['ZScoreNormalization', 'ZScoreNormalization', 'ZScoreNormalization'], 'use_mask_for_norm': [False, False, False], 'UNet_class_name': 'PlainConvUNet', 'UNet_base_num_features': 32, 'n_conv_per_stage_encoder': [2, 2, 2, 2, 2, 2, 2, 2], 'n_conv_per_stage_decoder': [2, 2, 2, 2, 2, 2, 2], 'num_pool_per_axis': [7, 7], 'pool_op_kernel_sizes': [[1, 1], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'conv_kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'unet_max_num_features': 512, 'resampling_fn_data': 'resample_data_or_seg_to_shape', 'resampling_fn_seg': 'resample_data_or_seg_to_shape', 'resampling_fn_data_kwargs': {'is_seg': False, 'order': 3, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_seg_kwargs': {'is_seg': True, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'resampling_fn_probabilities': 'resample_data_or_seg_to_shape', 'resampling_fn_probabilities_kwargs': {'is_seg': False, 'order': 1, 'order_z': 0, 'force_separate_z': None}, 'batch_dice': True} 
+ 
+These are the global plan.json settings:
+ {'dataset_name': 'Dataset902_KvasirSEG2D', 'plans_name': 'nnUNetPlans_old512', 'original_median_spacing_after_transp': [999.0, 1.0, 1.0], 'original_median_shape_after_transp': [1, 530, 621], 'image_reader_writer': 'NaturalImage2DIO', 'transpose_forward': [0, 1, 2], 'transpose_backward': [0, 1, 2], 'experiment_planner_used': 'ExperimentPlanner', 'label_manager': 'LabelManager', 'foreground_intensity_properties_per_channel': {'0': {'max': 255.0, 'mean': 205.11883544921875, 'median': 216.0, 'min': 0.0, 'percentile_00_5': 65.0, 'percentile_99_5': 255.0, 'std': 41.50252914428711}, '1': {'max': 255.0, 'mean': 121.18470001220703, 'median': 116.0, 'min': 0.0, 'percentile_00_5': 18.0, 'percentile_99_5': 253.0, 'std': 46.51519012451172}, '2': {'max': 255.0, 'mean': 88.90050506591797, 'median': 82.0, 'min': 0.0, 'percentile_00_5': 5.0, 'percentile_99_5': 244.0, 'std': 44.25529098510742}}} 
+ 
+2026-04-25 20:35:02.778064: unpacking dataset... 
+2026-04-25 20:35:05.186582: unpacking done... 
+2026-04-25 20:35:05.207561: do_dummy_2d_data_aug: False 
+2026-04-25 20:35:05.228500: Using splits from existing split file: E:\PA\DATA\nnUNet_preprocessed\Dataset902_KvasirSEG2D\splits_final.json 
+2026-04-25 20:35:05.243958: The split file contains 1 splits. 
+2026-04-25 20:35:05.259704: Desired fold for training: 0 
+2026-04-25 20:35:05.275217: This split has 880 training and 120 validation cases. 
+2026-04-25 20:35:05.307740: Unable to plot network architecture: 
+2026-04-25 20:35:05.313174: No module named 'hiddenlayer' 
+2026-04-25 20:35:05.376257:  
+2026-04-25 20:35:05.381647: Epoch 89 
+2026-04-25 20:35:05.387736: Current learning rate: 0.00137 
+2026-04-25 20:36:49.133115: train_loss -0.8674 
+2026-04-25 20:36:49.134133: val_loss -0.618 
+2026-04-25 20:36:49.156841: Pseudo dice [0.8434] 
+2026-04-25 20:36:49.174689: Epoch time: 103.75 s 
+2026-04-25 20:36:49.764911:  
+2026-04-25 20:36:49.776459: Epoch 90 
+2026-04-25 20:36:49.791887: Current learning rate: 0.00126 
+2026-04-25 20:38:21.047010: train_loss -0.8711 
+2026-04-25 20:38:21.056582: val_loss -0.6443 
+2026-04-25 20:38:21.067310: Pseudo dice [0.8578] 
+2026-04-25 20:38:21.077026: Epoch time: 91.29 s 
+2026-04-25 20:38:21.923078:  
+2026-04-25 20:38:21.944251: Epoch 91 
+2026-04-25 20:38:21.955221: Current learning rate: 0.00115 
+2026-04-25 20:39:54.684628: train_loss -0.8828 
+2026-04-25 20:39:54.699515: val_loss -0.6139 
+2026-04-25 20:39:54.716276: Pseudo dice [0.856] 
+2026-04-25 20:39:54.725900: Epoch time: 92.76 s 
+2026-04-25 20:39:54.746454: Yayy! New best EMA pseudo Dice: 0.8517 
+2026-04-25 20:39:56.298807:  
+2026-04-25 20:39:56.323589: Epoch 92 
+2026-04-25 20:39:56.336699: Current learning rate: 0.00103 
+2026-04-25 20:41:26.775580: train_loss -0.8786 
+2026-04-25 20:41:26.796283: val_loss -0.6362 
+2026-04-25 20:41:26.815708: Pseudo dice [0.8595] 
+2026-04-25 20:41:26.826295: Epoch time: 90.48 s 
+2026-04-25 20:41:26.850866: Yayy! New best EMA pseudo Dice: 0.8525 
+2026-04-25 20:41:27.904571:  
+2026-04-25 20:41:27.923481: Epoch 93 
+2026-04-25 20:41:27.941933: Current learning rate: 0.00091 
+2026-04-25 20:42:57.338396: train_loss -0.8803 
+2026-04-25 20:42:57.369480: val_loss -0.631 
+2026-04-25 20:42:57.389855: Pseudo dice [0.8564] 
+2026-04-25 20:42:57.406315: Epoch time: 89.43 s 
+2026-04-25 20:42:57.420244: Yayy! New best EMA pseudo Dice: 0.8529 
+2026-04-25 20:42:58.460156:  
+2026-04-25 20:42:58.471492: Epoch 94 
+2026-04-25 20:42:58.486988: Current learning rate: 0.00079 
+2026-04-25 20:44:28.263738: train_loss -0.8836 
+2026-04-25 20:44:28.284240: val_loss -0.6298 
+2026-04-25 20:44:28.301584: Pseudo dice [0.8527] 
+2026-04-25 20:44:28.315048: Epoch time: 89.8 s 
+2026-04-25 20:44:28.912240:  
+2026-04-25 20:44:28.923928: Epoch 95 
+2026-04-25 20:44:28.944429: Current learning rate: 0.00067 
+2026-04-25 20:46:03.536222: train_loss -0.8834 
+2026-04-25 20:46:03.554092: val_loss -0.6745 
+2026-04-25 20:46:03.562906: Pseudo dice [0.8673] 
+2026-04-25 20:46:03.575015: Epoch time: 94.62 s 
+2026-04-25 20:46:03.585295: Yayy! New best EMA pseudo Dice: 0.8543 
+2026-04-25 20:46:05.020815:  
+2026-04-25 20:46:05.036662: Epoch 96 
+2026-04-25 20:46:05.052258: Current learning rate: 0.00055 
+2026-04-25 20:47:39.713621: train_loss -0.8882 
+2026-04-25 20:47:39.723557: val_loss -0.6498 
+2026-04-25 20:47:39.739710: Pseudo dice [0.8628] 
+2026-04-25 20:47:39.750988: Epoch time: 94.69 s 
+2026-04-25 20:47:39.760332: Yayy! New best EMA pseudo Dice: 0.8551 
+2026-04-25 20:47:41.201998:  
+2026-04-25 20:47:41.217053: Epoch 97 
+2026-04-25 20:47:41.228251: Current learning rate: 0.00043 
+2026-04-25 20:49:14.644313: train_loss -0.8879 
+2026-04-25 20:49:14.654402: val_loss -0.6 
+2026-04-25 20:49:14.667279: Pseudo dice [0.8405] 
+2026-04-25 20:49:14.684997: Epoch time: 93.44 s 
+2026-04-25 20:49:15.585357:  
+2026-04-25 20:49:15.598974: Epoch 98 
+2026-04-25 20:49:15.610780: Current learning rate: 0.0003 
+2026-04-25 20:50:49.299917: train_loss -0.8841 
+2026-04-25 20:50:49.307417: val_loss -0.6528 
+2026-04-25 20:50:49.328084: Pseudo dice [0.8635] 
+2026-04-25 20:50:49.346019: Epoch time: 93.72 s 
+2026-04-25 20:50:50.441374:  
+2026-04-25 20:50:50.454620: Epoch 99 
+2026-04-25 20:50:50.469859: Current learning rate: 0.00016 
+2026-04-25 20:52:23.469208: train_loss -0.8857 
+2026-04-25 20:52:23.482929: val_loss -0.591 
+2026-04-25 20:52:23.489724: Pseudo dice [0.8521] 
+2026-04-25 20:52:23.497705: Epoch time: 93.03 s 
+2026-04-25 20:52:25.204699: Using splits from existing split file: E:\PA\DATA\nnUNet_preprocessed\Dataset902_KvasirSEG2D\splits_final.json 
+2026-04-25 20:52:25.227829: The split file contains 1 splits. 
+2026-04-25 20:52:25.248446: Desired fold for training: 0 
+2026-04-25 20:52:25.268689: This split has 880 training and 120 validation cases. 
+2026-04-25 20:52:25.293067: predicting cju0s690hkp960855tjuaqvv0 
+2026-04-25 20:52:26.112204: predicting cju0sr5ghl0nd08789uzf1raf 
+2026-04-25 20:52:27.278498: predicting cju0sxqiclckk08551ycbwhno 
+2026-04-25 20:52:27.697104: predicting cju0t4oil7vzk099370nun5h9 
+2026-04-25 20:52:28.105043: predicting cju0tl3uz8blh0993wxvn7ly3 
+2026-04-25 20:52:28.452864: predicting cju0u2g7pmnux0801vkk47ivj 
+2026-04-25 20:52:28.813482: predicting cju0u82z3cuma0835wlxrnrjv 
+2026-04-25 20:52:29.152410: predicting cju0ue769mxii08019zqgdbxn 
+2026-04-25 20:52:29.404175: predicting cju0vtox5ain6099360pu62rp 
+2026-04-25 20:52:29.609472: predicting cju13cgqmnhwn0988yrainhcp 
+2026-04-25 20:52:29.823938: predicting cju13fwthn9mq0835gacxgy01 
+2026-04-25 20:52:30.095891: predicting cju13hp5rnbjx0835bf0jowgx 
+2026-04-25 20:52:30.405169: predicting cju14g8o4xui30878gkgbrvqj 
+2026-04-25 20:52:30.665687: predicting cju14hjh2ob2o0835ouz3r5aa 
+2026-04-25 20:52:30.920693: predicting cju14pxbaoksp0835qzorx6g6 
+2026-04-25 20:52:31.253607: predicting cju15czxqp3lv0835jvhgzurz 
+2026-04-25 20:52:31.612572: predicting cju15jr8jz8sb0855ukmkswkz 
+2026-04-25 20:52:32.972265: predicting cju15l5ubz9yh0855b3ivdpse 
+2026-04-25 20:52:34.192163: predicting cju15mhjczc8z0801kit5c6di 
+2026-04-25 20:52:34.422287: predicting cju15ptjtppz40988odsm9azx 
+2026-04-25 20:52:34.645437: predicting cju15wdt3zla10801odjiw7sy 
+2026-04-25 20:52:34.917227: predicting cju160wshltz10993i1gmqxbe 
+2026-04-25 20:52:36.263005: predicting cju16ach3m1da0993r1dq3sn2 
+2026-04-25 20:52:37.496258: predicting cju16b6ynq8e40988m8vx0xnj 
+2026-04-25 20:52:38.737258: predicting cju16d65tzw9d0799ouslsw25 
+2026-04-25 20:52:40.993600: predicting cju16fpvhzypl0799p9phnlx6 
+2026-04-25 20:52:41.236008: predicting cju16jgnyzp970878melv7r25 
+2026-04-25 20:52:41.487048: predicting cju16whaj0e7n0855q7b6cjkm 
+2026-04-25 20:52:41.723139: predicting cju32qr9tbvsj08013pkpjenq 
+2026-04-25 20:52:41.944905: predicting cju32srle1xfq083575i3fl75 
+2026-04-25 20:52:42.188284: predicting cju32upim1z7u0988l883nqp6 
+2026-04-25 20:52:42.318453: predicting cju32zhbnc1oy0801iyv1ix6p 
+2026-04-25 20:52:42.545174: predicting cju330ofbc2l30801th5g3hw6 
+2026-04-25 20:52:42.675251: predicting cju33231uy4gi0993qc7b1jch 
+2026-04-25 20:52:42.906769: predicting cju334jzo261t0835yqudnfs1 
+2026-04-25 20:52:43.135723: predicting cju336l68y7if0993wf092166 
+2026-04-25 20:52:43.356706: predicting cju3381d8bz3h07991xtl7ra0 
+2026-04-25 20:52:43.595236: predicting cju33belnbyhm0878yxl42233 
+2026-04-25 20:52:43.842325: predicting cju33eqwbcch208012jikwdky 
+2026-04-25 20:52:44.048594: predicting cju33jon3ygbj0993pu22a4k6 
+2026-04-25 20:52:44.269073: predicting cju33mirdc8mj0799k33wzoes 
+2026-04-25 20:52:44.487375: predicting cju33o12x2jm50988944mxq0v 
+2026-04-25 20:52:44.723524: predicting cju33qpdvc9g0087825jhf3s9 
+2026-04-25 20:52:44.942309: predicting cju33w4sdcivk0855x879zht7 
+2026-04-25 20:52:45.156100: predicting cju33x0f22peh0988g0ln7w5v 
+2026-04-25 20:52:45.381453: predicting cju7dp3dw2k4n0755zhe003ad 
+2026-04-25 20:52:45.603344: predicting cju7dqcwi2dz00850gcmr2ert 
+2026-04-25 20:52:45.835464: predicting cju7druhp2gp308715i6km7be 
+2026-04-25 20:52:46.062020: predicting cju7dsrtb2f8i085064kwugfk 
+2026-04-25 20:52:46.295154: predicting cju7dtb1e2j0t0818deq51ib3 
+2026-04-25 20:52:46.513341: predicting cju7dubap2g0w0801fgl42mg9 
+2026-04-25 20:52:46.862303: predicting cju7dvl5m2n4t0755hlnnjjet 
+2026-04-25 20:52:47.223803: predicting cju7dwe282dc309876rco45ts 
+2026-04-25 20:52:47.445360: predicting cju7dxffn2eam0817qxosfwch 
+2026-04-25 20:52:48.677118: predicting cju7dymur2od30755eg8yv2ht 
+2026-04-25 20:52:48.942455: predicting cju7dz5yy2i7z0801ausi7rna 
+2026-04-25 20:52:50.179783: predicting cju7ea4om2l910801bohqjccy 
+2026-04-25 20:52:50.427205: predicting cju7ebe962hr409872ovibahw 
+2026-04-25 20:52:50.647156: predicting cju7ecl9i2i060987xawjp4l0 
+2026-04-25 20:52:50.862579: predicting cju7eea9b2m0z0801ynqv1fqu 
+2026-04-25 20:52:51.476151: predicting cju85nr8elly209872w9n5m0s 
+2026-04-25 20:52:51.828664: predicting cju85omszllp30850b6rm9mi3 
+2026-04-25 20:52:52.060060: predicting cju85plp7lmkw0850rx42jdpf 
+2026-04-25 20:52:52.281414: predicting cju85qefyln6v0850szeb9byi 
+2026-04-25 20:52:52.502622: predicting cju85rkbnlo1c08503uxcpax1 
+2026-04-25 20:52:52.727548: predicting cju87kbcen2av0987usezo8kn 
+2026-04-25 20:52:52.957456: predicting cju87li0zn3yb0817kbwgjiz8 
+2026-04-25 20:52:53.078102: predicting cju87mrypnb1e0818scv1mxxg 
+2026-04-25 20:52:53.305598: predicting cju87nkyrnb970801q84m47yt 
+2026-04-25 20:52:53.510470: predicting cju87ox0kncom0801b98hqnd2 
+2026-04-25 20:52:53.721721: predicting cju87q6yoneim0871dl4phvkd 
+2026-04-25 20:52:53.959772: predicting cju87r56lnkyp0755hz30leew 
+2026-04-25 20:52:54.086362: predicting cju87tyddnnad0755bj0wxahe 
+2026-04-25 20:52:54.204957: predicting cju87vqa0ndwg0850onjdz7ol 
+2026-04-25 20:52:54.429755: predicting cju87xn2snfmv0987sc3d9xnq 
+2026-04-25 20:52:54.652214: predicting cju87z6o6nh73085045bzsx6o 
+2026-04-25 20:52:54.867855: predicting cju87zv8lni0o0850hbbecbq6 
+2026-04-25 20:52:55.087363: predicting cju8828oxnool0801qno9luhr 
+2026-04-25 20:52:55.309685: predicting cju884985nlmx0817vzpax3y4 
+2026-04-25 20:52:55.546847: predicting cju8ceacrsqkr0755hdz145es 
+2026-04-25 20:52:55.686236: predicting cju8cgi2kspp308011nxdtjp6 
+2026-04-25 20:52:55.908881: predicting cju8chdlqsu620755azjty1tj 
+2026-04-25 20:52:56.132597: predicting cju8chxndsre008015uisl4si 
+2026-04-25 20:52:56.259663: predicting cju8cj10qsrau0871o2dr6ai1 
+2026-04-25 20:52:56.489901: predicting cju8clorgsuwn08714toqb7v6 
+2026-04-25 20:52:56.716061: predicting cju8cwy02t9eq08185qn12c02 
+2026-04-25 20:52:56.942302: predicting cju8czvnztbf40871b4m7t78w 
+2026-04-25 20:52:57.170706: predicting cju8d2q30tfhs0801n7lx77xl 
+2026-04-25 20:52:57.388582: predicting cju8d4jgatgpj0871q2ophhkm 
+2026-04-25 20:52:57.612635: predicting cju8dic9mtppa0987swn23wbc 
+2026-04-25 20:52:57.835014: predicting cju8djdqztu6408506pzhlo18 
+2026-04-25 20:52:58.054403: predicting cju8dk7eztzup08182yxko5zh 
+2026-04-25 20:52:58.269958: predicting cju8dm2cau2km0818jsv9eeq2 
+2026-04-25 20:52:58.486439: predicting cju8dn0c3u2v50801k8rvq02f 
+2026-04-25 20:52:59.564189: predicting cju8doa16u5gh0818w1ywda3q 
+2026-04-25 20:52:59.859251: predicting cju8dpa89u6l80818dj6lldh9 
+2026-04-25 20:53:00.073667: predicting cju8dqkrqu83i0818ev74qpxq 
+2026-04-25 20:53:02.176792: predicting cjyzjzssvd8pq0838f4nolj5l 
+2026-04-25 20:53:12.524702: predicting cjyzk8qieoboa0848ogj51wwm 
+2026-04-25 20:53:14.925658: predicting cjyzkmjy8evns070165gf9dmq 
+2026-04-25 20:53:21.572068: predicting cjyzkpsbjdsjq07211dfi4sru 
+2026-04-25 20:53:23.014881: predicting cjyzl833ndne80838pzuq6ila 
+2026-04-25 20:53:24.173937: predicting cjyzlw7f9faqr070129au64sq 
+2026-04-25 20:53:24.320518: predicting cjyztzaqtrv430848l8xgcerw 
+2026-04-25 20:53:24.464319: predicting cjyzu3reghjya0794w7pwoi50 
+2026-04-25 20:53:24.594141: predicting cjyzu9th0qt4r0a46pyl4zik0 
+2026-04-25 20:53:24.736560: predicting cjyzufihqquiw0a46jatrbwln 
+2026-04-25 20:53:24.867114: predicting cjyzuio1qgh040763k56deohv 
+2026-04-25 20:53:24.997375: predicting cjyzul1qggwwj07216mhiv5sy 
+2026-04-25 20:53:25.748581: predicting cjyzurzvohqnr0794es1itzek 
+2026-04-25 20:53:25.892555: predicting cjz14qsk2wci60794un9ozwmw 
+2026-04-25 20:53:26.017391: predicting ck2395w2mb4vu07480otsu6tw 
+2026-04-25 20:53:26.144024: predicting ck2bxiswtxuw80838qkisqjwz 
+2026-04-25 20:53:26.272471: predicting ck2bxknhjvs1x0794iogrq49k 
+2026-04-25 20:53:26.406163: predicting ck2bxlujamu330725szlc2jdu 
+2026-04-25 20:53:26.535623: predicting ck2bxpfgxu2mk0748gsh7xelu 
+2026-04-25 20:53:26.668603: predicting ck2bxqz3evvg20794iiyv5v2m 
+2026-04-25 20:53:26.795127: predicting ck2bxskgxxzfv08386xkqtqdy 
+2026-04-25 20:53:26.919513: predicting ck2bxw18mmz1k0725litqq2mc 
+2026-04-25 20:53:27.056210: predicting ck2da7fwcjfis07218r1rvm95 

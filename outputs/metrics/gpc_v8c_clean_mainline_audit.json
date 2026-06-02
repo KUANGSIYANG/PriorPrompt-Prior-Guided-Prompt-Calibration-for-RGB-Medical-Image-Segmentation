@@ -1,0 +1,96 @@
+{
+  "mainline": "SafeAnchor-GPC-v8c Teacher-Free NoResidual NoTemperature LearnedThreshold",
+  "config": "E:\\PA\\safeanchor_repro_clean\\paper_release_v8c\\configs\\branch_safeanchor_gpc_v8c_teacher_free_nores_notemp_learnthr_unified.json",
+  "protocol": {
+    "checkpoint_policy": "checkpoint_last",
+    "validation_selection": false,
+    "architecture_same_for_kvasir_and_ph2": true,
+    "allowed_dataset_specific_items": [
+      "dataset probabilities",
+      "dataset images and labels",
+      "dataset-specific nnUNet weights",
+      "dataset-specific BB2/SafeAnchor weights",
+      "dataset-specific GPC weights"
+    ]
+  },
+  "audit": {
+    "manifest_same_architecture_except_allowed_fields": true,
+    "forbidden_flags_ok": true,
+    "gpc_cfg_ok": true,
+    "config_method_family": "SafeAnchor-GPC-v8c Teacher-Free NoResidual NoTemperature LearnedThreshold"
+  },
+  "metrics": {
+    "nnunet_kvasir_val50": {
+      "dice": 88.53789617623274,
+      "asd": 10.983374540805817,
+      "hd95": 43.98238891410827
+    },
+    "nnunet_kvasir_test70": {
+      "dice": 84.41978853323737,
+      "asd": 22.036114738668715,
+      "hd95": 80.88261427743092
+    },
+    "nnunet_ph2_val30": {
+      "dice": 93.5787060461291,
+      "asd": 28.461658191680907,
+      "hd95": 95.28148243268329
+    },
+    "nnunet_ph2_test30": {
+      "dice": 91.69245152809334,
+      "asd": 20.269488954544066,
+      "hd95": 62.60536932627358
+    },
+    "gpc_v8c_kvasir_val50": {
+      "dice": 90.51154755613128,
+      "asd": 8.490200972557068,
+      "hd95": 32.00949675941467
+    },
+    "gpc_v8c_kvasir_test70": {
+      "dice": 85.22176240894647,
+      "asd": 19.8052668094635,
+      "hd95": 63.666869173049925
+    },
+    "gpc_v8c_ph2_val30": {
+      "dice": 95.40949858396642,
+      "asd": 9.802621126174927,
+      "hd95": 32.722594496409094
+    },
+    "gpc_v8c_ph2_test30": {
+      "dice": 92.30298800846307,
+      "asd": 15.488606508572897,
+      "hd95": 47.401885960896806
+    },
+    "nnunet_kvasir_test120": {
+      "dice": 86.13566671781876,
+      "asd": 17.430806322892508,
+      "hd95": 65.50752037604647
+    },
+    "gpc_v8c_kvasir_test120": {
+      "dice": 87.42583955360682,
+      "asd": 15.09065604408582,
+      "hd95": 50.47629733403524
+    },
+    "nnunet_ph2_test60": {
+      "dice": 92.63557878711121,
+      "asd": 24.36557357311249,
+      "hd95": 78.94342587947843
+    },
+    "gpc_v8c_ph2_test60": {
+      "dice": 93.85624329621474,
+      "asd": 12.645613817373912,
+      "hd95": 40.062240228652946
+    }
+  },
+  "gains_vs_nnunet_only": {
+    "kvasir_test120": {
+      "dice": 1.2901728357880557,
+      "asd": -2.3401502788066875,
+      "hd95": -15.031223042011234
+    },
+    "ph2_test60": {
+      "dice": 1.2206645091035284,
+      "asd": -11.719959755738577,
+      "hd95": -38.88118565082548
+    }
+  }
+}

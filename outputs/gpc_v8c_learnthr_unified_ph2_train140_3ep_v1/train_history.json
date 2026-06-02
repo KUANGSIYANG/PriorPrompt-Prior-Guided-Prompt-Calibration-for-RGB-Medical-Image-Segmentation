@@ -1,0 +1,33 @@
+[
+  {
+    "loss": 0.7938197470524094,
+    "final": 0.17161107613620433,
+    "prior": 0.22701368616385895,
+    "boundary": 0.0018539550391406838,
+    "box": 0.27031589204614814,
+    "anchor": 0.0,
+    "distill": 0.0,
+    "binarize": 0.15003572428091005,
+    "binary_boundary": 0.0,
+    "binary_area": 0.0,
+    "binary_distance": 0.0,
+    "residual": 0.0,
+    "alpha": 0.5177569541064175,
+    "box_scale": 2.420384022322568,
+    "temperature": 1.0,
+    "threshold": 0.5879639105363326,
+    "threshold_sharpness": 12.001995572176847,
+    "w_final": 1.0053003685040907,
+    "w_prior": 1.0052455430681055,
+    "w_boundary": 1.0053234176202255,
+    "w_box": 1.0051180536096747,
+    "w_anchor": 1.005323385108601,
+    "w_distill": 0.0,
+    "w_binarize": 1.0053044004873797,
+    "w_binary_boundary": 0.0,
+    "w_binary_area": 0.0,
+    "w_binary_distance": 0.0,
+    "step": 220,
+    "epoch": 2
+  }
+]

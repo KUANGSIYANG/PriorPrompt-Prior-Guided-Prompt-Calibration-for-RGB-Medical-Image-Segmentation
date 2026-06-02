@@ -1,0 +1,87 @@
+{
+  "dataset": "ph2_lesion_test30",
+  "split": "ph2_test30",
+  "grid": "outputs\\figures\\v8c_component_selected8_paper_titles_seed20260522\\ph2_lesion_test30\\ph2_lesion_test30_component_grid.png",
+  "cases": [
+    {
+      "case_id": "ph2_imd429",
+      "nnunet": {
+        "case_id": "ph2_imd429",
+        "dice": 95.84277693947743,
+        "asd_mm": 5.442493915557861,
+        "hd95_mm": 18.357559204101562,
+        "gt_area": 79714,
+        "pred_area": 83977,
+        "is_gt_empty": false,
+        "is_pred_empty": false,
+        "gt_component_count": 1,
+        "pred_component_count": 1,
+        "omission_count": 0,
+        "merge_count": 0,
+        "omission_component_ids": [],
+        "merge_pred_component_ids": [],
+        "merge_gt_component_pairs": [],
+        "omission_components": [],
+        "merge_components": [],
+        "omission_severity": 0.0,
+        "merge_severity": 0.0,
+        "failure_total_severity": 0.0
+      },
+      "v8c": {
+        "case_id": "ph2_imd429",
+        "dice": 98.02607406656615,
+        "asd_mm": 2.4033162593841553,
+        "hd95_mm": 6.4031243324279785,
+        "gt_area": 79714,
+        "pred_area": 78144,
+        "is_gt_empty": false,
+        "is_pred_empty": false,
+        "gt_component_count": 1,
+        "pred_component_count": 1,
+        "omission_count": 0,
+        "merge_count": 0,
+        "omission_component_ids": [],
+        "merge_pred_component_ids": [],
+        "merge_gt_component_pairs": [],
+        "omission_components": [],
+        "merge_components": [],
+        "omission_severity": 0.0,
+        "merge_severity": 0.0,
+        "failure_total_severity": 0.0
+      },
+      "box": [
+        0.27462074160575867,
+        0.22983556985855103,
+        0.8336788415908813,
+        0.7782097458839417
+      ],
+      "alpha": 0.6229490041732788,
+      "box_scale": 2.087331533432007,
+      "threshold": 0.5266982913017273,
+      "figure": "outputs\\figures\\v8c_component_selected8_paper_titles_seed20260522\\ph2_lesion_test30\\ph2_lesion_test30_ph2_imd429_component.png"
+    }
+  ],
+  "color_policy": {
+    "gt_rgb": [
+      255,
+      35,
+      35
+    ],
+    "prediction_rgb": [
+      160,
+      65,
+      230
+    ],
+    "overlap_rgb": [
+      255,
+      115,
+      210
+    ],
+    "box_rgb": [
+      255,
+      35,
+      35
+    ],
+    "prompt_cmap": "magma"
+  }
+}

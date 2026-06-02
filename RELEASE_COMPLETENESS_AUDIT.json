@@ -1,0 +1,90 @@
+{
+  "release_root": "E:\\PA\\safeanchor_repro_clean\\paper_release_v8c",
+  "complete": true,
+  "scope": "v8c GPC training/inference plus frozen upstream nnUNet/BB2/MobileSAM weights and probabilities",
+  "missing_required_files": [],
+  "datasets": {
+    "kvasir_train880": {
+      "expected_cases": 880,
+      "ids": 880,
+      "images": 880,
+      "labels": 880,
+      "prob_files": 880,
+      "ok": true
+    },
+    "kvasir_val50": {
+      "expected_cases": 50,
+      "ids": 50,
+      "images": 50,
+      "labels": 50,
+      "prob_files": 50,
+      "ok": true
+    },
+    "kvasir_test70": {
+      "expected_cases": 70,
+      "ids": 70,
+      "images": 70,
+      "labels": 70,
+      "prob_files": 70,
+      "ok": true
+    },
+    "ph2_train140": {
+      "expected_cases": 140,
+      "ids": 140,
+      "images": 140,
+      "labels": 140,
+      "prob_files": 140,
+      "ok": true
+    },
+    "ph2_val30": {
+      "expected_cases": 30,
+      "ids": 30,
+      "images": 30,
+      "labels": 30,
+      "prob_files": 30,
+      "ok": true
+    },
+    "ph2_test30": {
+      "expected_cases": 30,
+      "ids": 30,
+      "images": 30,
+      "labels": 30,
+      "prob_files": 30,
+      "ok": true
+    }
+  },
+  "metrics": {
+    "metrics_gpc_v8c_learnthr_unified_kvasir_val50_last.json": true,
+    "metrics_gpc_v8c_learnthr_unified_kvasir_test70_last.json": true,
+    "metrics_gpc_v8c_learnthr_unified_ph2_val30_last.json": true,
+    "metrics_gpc_v8c_learnthr_unified_ph2_test30_last.json": true,
+    "metrics_nnunet_only_val50.json": true,
+    "metrics_nnunet_only_test70.json": true,
+    "metrics_nnunet_only_ph2_val30.json": true,
+    "metrics_nnunet_only_ph2_test30.json": true
+  },
+  "predictions": {
+    "outputs/pred_gpc_v8c_learnthr_unified_kvasir_val50_last": {
+      "expected": 50,
+      "png_files": 50,
+      "ok": true
+    },
+    "outputs/pred_gpc_v8c_learnthr_unified_kvasir_test70_last": {
+      "expected": 70,
+      "png_files": 70,
+      "ok": true
+    },
+    "outputs/pred_gpc_v8c_learnthr_unified_ph2_val30_last": {
+      "expected": 30,
+      "png_files": 30,
+      "ok": true
+    },
+    "outputs/pred_gpc_v8c_learnthr_unified_ph2_test30_last": {
+      "expected": 30,
+      "png_files": 30,
+      "ok": true
+    }
+  },
+  "pycache_dirs": [],
+  "note": "nnUNet and BB2 are frozen upstream stages in v8c; their trained weights and probabilities are included. The executable training scripts in this release retrain the v8c GPC heads for Kvasir and PH2."
+}

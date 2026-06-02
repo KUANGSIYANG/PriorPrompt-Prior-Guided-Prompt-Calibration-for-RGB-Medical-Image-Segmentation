@@ -1,0 +1,201 @@
+{
+  "dataset": "ph2_lesion_val30",
+  "split": "ph2_val30",
+  "grid": "outputs\\figures\\v8c_component_selected8_paper_titles_seed20260522\\ph2_lesion_val30\\ph2_lesion_val30_component_grid.png",
+  "cases": [
+    {
+      "case_id": "ph2_imd027",
+      "nnunet": {
+        "case_id": "ph2_imd027",
+        "dice": 86.65029320946456,
+        "asd_mm": 23.169809341430664,
+        "hd95_mm": 44.348907089233236,
+        "gt_area": 97375,
+        "pred_area": 127379,
+        "is_gt_empty": false,
+        "is_pred_empty": false,
+        "gt_component_count": 1,
+        "pred_component_count": 7,
+        "omission_count": 0,
+        "merge_count": 0,
+        "omission_component_ids": [],
+        "merge_pred_component_ids": [],
+        "merge_gt_component_pairs": [],
+        "omission_components": [],
+        "merge_components": [],
+        "omission_severity": 0.0,
+        "merge_severity": 0.0,
+        "failure_total_severity": 0.0
+      },
+      "v8c": {
+        "case_id": "ph2_imd027",
+        "dice": 90.84863852659204,
+        "asd_mm": 14.907944679260254,
+        "hd95_mm": 33.55889167785643,
+        "gt_area": 97375,
+        "pred_area": 116768,
+        "is_gt_empty": false,
+        "is_pred_empty": false,
+        "gt_component_count": 1,
+        "pred_component_count": 1,
+        "omission_count": 0,
+        "merge_count": 0,
+        "omission_component_ids": [],
+        "merge_pred_component_ids": [],
+        "merge_gt_component_pairs": [],
+        "omission_components": [],
+        "merge_components": [],
+        "omission_severity": 0.0,
+        "merge_severity": 0.0,
+        "failure_total_severity": 0.0
+      },
+      "box": [
+        0.2715212404727936,
+        0.042006462812423706,
+        0.8090922832489014,
+        0.8867459297180176
+      ],
+      "alpha": 0.6230571269989014,
+      "box_scale": 2.086935520172119,
+      "threshold": 0.5266369581222534,
+      "figure": "outputs\\figures\\v8c_component_selected8_paper_titles_seed20260522\\ph2_lesion_val30\\ph2_lesion_val30_ph2_imd027_component.png"
+    },
+    {
+      "case_id": "ph2_imd057",
+      "nnunet": {
+        "case_id": "ph2_imd057",
+        "dice": 92.14011030263235,
+        "asd_mm": 90.86115264892578,
+        "hd95_mm": 262.51380615234376,
+        "gt_area": 181414,
+        "pred_area": 211505,
+        "is_gt_empty": false,
+        "is_pred_empty": false,
+        "gt_component_count": 1,
+        "pred_component_count": 21,
+        "omission_count": 0,
+        "merge_count": 0,
+        "omission_component_ids": [],
+        "merge_pred_component_ids": [],
+        "merge_gt_component_pairs": [],
+        "omission_components": [],
+        "merge_components": [],
+        "omission_severity": 0.0,
+        "merge_severity": 0.0,
+        "failure_total_severity": 0.0
+      },
+      "v8c": {
+        "case_id": "ph2_imd057",
+        "dice": 98.56055034202828,
+        "asd_mm": 2.828092575073242,
+        "hd95_mm": 6.324555397033691,
+        "gt_area": 181414,
+        "pred_area": 180252,
+        "is_gt_empty": false,
+        "is_pred_empty": false,
+        "gt_component_count": 1,
+        "pred_component_count": 3,
+        "omission_count": 0,
+        "merge_count": 0,
+        "omission_component_ids": [],
+        "merge_pred_component_ids": [],
+        "merge_gt_component_pairs": [],
+        "omission_components": [],
+        "merge_components": [],
+        "omission_severity": 0.0,
+        "merge_severity": 0.0,
+        "failure_total_severity": 0.0
+      },
+      "box": [
+        0.041401952505111694,
+        0.0,
+        0.8995869159698486,
+        1.0
+      ],
+      "alpha": 0.6220888495445251,
+      "box_scale": 2.0903491973876953,
+      "threshold": 0.5273517966270447,
+      "figure": "outputs\\figures\\v8c_component_selected8_paper_titles_seed20260522\\ph2_lesion_val30\\ph2_lesion_val30_ph2_imd057_component.png"
+    },
+    {
+      "case_id": "ph2_imd418",
+      "nnunet": {
+        "case_id": "ph2_imd418",
+        "dice": 87.84322288334516,
+        "asd_mm": 36.34006118774414,
+        "hd95_mm": 127.0127944946289,
+        "gt_area": 250920,
+        "pred_area": 316969,
+        "is_gt_empty": false,
+        "is_pred_empty": false,
+        "gt_component_count": 1,
+        "pred_component_count": 97,
+        "omission_count": 0,
+        "merge_count": 0,
+        "omission_component_ids": [],
+        "merge_pred_component_ids": [],
+        "merge_gt_component_pairs": [],
+        "omission_components": [],
+        "merge_components": [],
+        "omission_severity": 0.0,
+        "merge_severity": 0.0,
+        "failure_total_severity": 0.0
+      },
+      "v8c": {
+        "case_id": "ph2_imd418",
+        "dice": 95.02785178968038,
+        "asd_mm": 12.15870189666748,
+        "hd95_mm": 43.9749900817871,
+        "gt_area": 250920,
+        "pred_area": 254254,
+        "is_gt_empty": false,
+        "is_pred_empty": false,
+        "gt_component_count": 1,
+        "pred_component_count": 20,
+        "omission_count": 0,
+        "merge_count": 0,
+        "omission_component_ids": [],
+        "merge_pred_component_ids": [],
+        "merge_gt_component_pairs": [],
+        "omission_components": [],
+        "merge_components": [],
+        "omission_severity": 0.0,
+        "merge_severity": 0.0,
+        "failure_total_severity": 0.0
+      },
+      "box": [
+        0.04910546541213989,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "alpha": 0.6215431094169617,
+      "box_scale": 2.09228253364563,
+      "threshold": 0.5277495980262756,
+      "figure": "outputs\\figures\\v8c_component_selected8_paper_titles_seed20260522\\ph2_lesion_val30\\ph2_lesion_val30_ph2_imd418_component.png"
+    }
+  ],
+  "color_policy": {
+    "gt_rgb": [
+      255,
+      35,
+      35
+    ],
+    "prediction_rgb": [
+      160,
+      65,
+      230
+    ],
+    "overlap_rgb": [
+      255,
+      115,
+      210
+    ],
+    "box_rgb": [
+      255,
+      35,
+      35
+    ],
+    "prompt_cmap": "magma"
+  }
+}

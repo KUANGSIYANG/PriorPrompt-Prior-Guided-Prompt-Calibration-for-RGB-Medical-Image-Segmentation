@@ -1,0 +1,12 @@
+{
+  "method": "nnUNet-only",
+  "split": "val50",
+  "threshold": 0.5,
+  "prob_dir": "E:\\PA\\safeanchor_repro_clean\\paper_release_v8c\\data\\kvasir\\val50\\probs",
+  "gt_dir": "E:\\PA\\safeanchor_repro_clean\\paper_release_v8c\\data\\kvasir\\val50\\labels",
+  "ids_file": "E:\\PA\\safeanchor_repro_clean\\paper_release_v8c\\data\\kvasir\\val50\\ids.txt",
+  "count": 50,
+  "safeanchor_used": false,
+  "bb2_used": false,
+  "gpc_used": false
+}

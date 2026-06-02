@@ -1,0 +1,12 @@
+{
+  "method": "nnUNet-only",
+  "split": "ph2_val30",
+  "threshold": 0.5,
+  "prob_dir": "E:\\PA\\safeanchor_repro_clean\\paper_release_v8c\\data\\ph2\\val30\\probs",
+  "gt_dir": "E:\\PA\\safeanchor_repro_clean\\paper_release_v8c\\data\\ph2\\val30\\labels",
+  "ids_file": "E:\\PA\\safeanchor_repro_clean\\paper_release_v8c\\data\\ph2\\val30\\ids.txt",
+  "count": 30,
+  "safeanchor_used": false,
+  "bb2_used": false,
+  "gpc_used": false
+}

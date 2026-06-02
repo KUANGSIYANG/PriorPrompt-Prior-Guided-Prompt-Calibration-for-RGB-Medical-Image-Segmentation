@@ -1,0 +1,38 @@
+{
+  "kvasir_polyp_val50": {
+    "split": "val50",
+    "cases": [
+      "cju16fpvhzypl0799p9phnlx6"
+    ],
+    "count": 1,
+    "grid": "outputs\\figures\\v8c_component_selected8_paper_titles_seed20260522\\kvasir_polyp_val50\\kvasir_polyp_val50_component_grid.png"
+  },
+  "kvasir_polyp_test70": {
+    "split": "test70",
+    "cases": [
+      "cju7dqcwi2dz00850gcmr2ert",
+      "cju8dn0c3u2v50801k8rvq02f",
+      "cjyzuio1qgh040763k56deohv"
+    ],
+    "count": 3,
+    "grid": "outputs\\figures\\v8c_component_selected8_paper_titles_seed20260522\\kvasir_polyp_test70\\kvasir_polyp_test70_component_grid.png"
+  },
+  "ph2_lesion_val30": {
+    "split": "ph2_val30",
+    "cases": [
+      "ph2_imd027",
+      "ph2_imd057",
+      "ph2_imd418"
+    ],
+    "count": 3,
+    "grid": "outputs\\figures\\v8c_component_selected8_paper_titles_seed20260522\\ph2_lesion_val30\\ph2_lesion_val30_component_grid.png"
+  },
+  "ph2_lesion_test30": {
+    "split": "ph2_test30",
+    "cases": [
+      "ph2_imd429"
+    ],
+    "count": 1,
+    "grid": "outputs\\figures\\v8c_component_selected8_paper_titles_seed20260522\\ph2_lesion_test30\\ph2_lesion_test30_component_grid.png"
+  }
+}
