@@ -1,0 +1,2 @@
+# PriorPrompt-Prior-Guided-Prompt-Calibration-for-RGB-Medical-Image-Segmentation
+PriorPrompt calibrates nnU-Net probability priors into decoder-compatible prompts for automatic RGB medical segmentation. It learns case-wise dense-prompt fusion, box construction, and mask thresholding, using a frozen BED bridge to add boundary evidence. On Kvasir-SEG and PH2, it improves nnU-Net and rivals SAM baselines with oracle boxes.
