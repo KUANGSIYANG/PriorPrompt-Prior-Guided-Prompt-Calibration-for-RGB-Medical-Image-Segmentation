@@ -1,0 +1,28 @@
+{
+    "checkpoint_name": "checkpoint_final.pth",
+    "device": "cuda:0",
+    "folder_with_segs_from_prev_stage": null,
+    "list_of_lists_or_source_folder": "E:\\PA\\DATA\\nnUNet_raw\\Dataset902_KvasirSEG2D\\imagesTr_test_70",
+    "mode": "baseline_nnsam",
+    "model_training_output_dir": "E:\\PA\\DATA\\nnUNet_results\\nnunet\\Dataset902_KvasirSEG2D\\nnUNetTrainer_100epochs_old512hexa__nnUNetPlans_old512__2d",
+    "num_parts": 1,
+    "num_processes_preprocessing": 1,
+    "num_processes_segmentation_export": 1,
+    "output_folder": "E:\\PA\\DATA\\nnUNet_results\\nnunet\\kvasir_prob_100ep_old512hexa_test70",
+    "overwrite": true,
+    "part_id": 0,
+    "perform_everything_on_gpu": true,
+    "prompt_loop_config": null,
+    "prompt_loop_gt_dir": null,
+    "prompt_loop_save_dir": null,
+    "prompt_loop_use_gt_for_debug": false,
+    "save_probabilities": true,
+    "tile_step_size": 0.5,
+    "use_folds": [
+        0
+    ],
+    "use_gaussian": true,
+    "use_mirroring": true,
+    "use_prompt_loop": false,
+    "verbose": true
+}
